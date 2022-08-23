@@ -65,7 +65,7 @@ module.exports = (config) => {
       return res.status(404).json({ result: "service not found" });
     }
 
-    return res.json({ result: serviceAddress });
+    return res.json(serviceAddress);
   });
 
   // eslint-disable-next-line no-unused-vars
